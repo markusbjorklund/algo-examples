@@ -1,3 +1,6 @@
+using System.Linq;
+using System.Text.RegularExpressions;
+
 namespace part1
 {
   public class Substrings

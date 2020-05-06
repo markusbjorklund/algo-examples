@@ -8,11 +8,15 @@ namespace part1
     {
       // Console.WriteLine("Hello World!");
 
-      Numbers num = new Numbers();
-      Console.WriteLine(num.Sum(4075)); // 16
-      Console.WriteLine(num.Sum(3)); // 3
-      Console.WriteLine(num.Sum(999999999)); // 81
+      // Numbers num = new Numbers();
+      // Console.WriteLine(num.Sum(4075)); // 16
+      // Console.WriteLine(num.Sum(3)); // 3
+      // Console.WriteLine(num.Sum(999999999)); // 81
 
+      Substrings subs = new Substrings();
+      subs.Calculate("aybabtu", "bab"); // 1
+      subs.Calculate("aaaaa", "aa"); // 4
+      subs.Calculate("monkey", "banana"); // 0
     }
   }
 }
