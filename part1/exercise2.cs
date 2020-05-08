@@ -1,5 +1,3 @@
-using System;
-
 namespace part1
 {
   public class Substrings
