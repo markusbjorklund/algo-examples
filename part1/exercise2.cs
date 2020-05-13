@@ -1,9 +1,17 @@
+using System.Text.RegularExpressions;
+
 namespace part1
 {
   public class Substrings
   {
     public int Calculate(string a, string b)
     {
+
+      // trying out the regex way with ?=
+      // had that missing when trying it at first
+      return Regex.Matches(a, @"(?=" + b + ")").Count;
+
+      /*
       int match = 0;
 
       for (int i = 0; i <= a.Length - b.Length; i++)
@@ -24,7 +32,7 @@ namespace part1
           j = 0;
         }
       }
-      return match;
+      return match;*/
     }
   }
 }
