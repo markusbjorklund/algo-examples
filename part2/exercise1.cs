@@ -33,10 +33,7 @@ namespace part2
         {
           zeros++;
         }
-        else 
-        {
-          counter += zeros;
-        }
+        else counter += zeros;
       }
       Console.WriteLine(counter);
     }
