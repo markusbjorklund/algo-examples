@@ -10,6 +10,7 @@ namespace part1
     }
     private int CountLuckyNumbers(int input)
     {
+
       List<int> numbers = new List<int>();
       if (input >= 3)
       {
@@ -25,7 +26,7 @@ namespace part1
       // counting with variables and adding to list
       // a loop solution to remember for future use
       int i = 0;
-      while(true)
+      while (true)
       {
         int varPlusThree = numbers[i] * 10 + 3;
         int varPlusSeven = numbers[i] * 10 + 7;
@@ -39,7 +40,7 @@ namespace part1
           break;
         }
         numbers.Add(varPlusSeven);
-        i++; 
+        i++;
       }
       return numbers.Count;
     }
