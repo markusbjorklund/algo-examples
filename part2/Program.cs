@@ -19,14 +19,14 @@ namespace part2
       string tenthousand = counter.CreateInput(10000);
 
       DateTime start = DateTime.Now;
-      counter.Turtle(tenthousand);
+      counter.Turtle(hundred);
       DateTime end = DateTime.Now;
       Console.WriteLine("=======================================");
       Console.WriteLine("Total time: " + end.Subtract(start));
       Console.WriteLine("=======================================");
-      Console.WriteLine("In milliseconds: " + (end.Ticks - start.Ticks) / 10000.0);
-      Console.WriteLine("In seconds: " + (end.Ticks - start.Ticks) / 10000000.0);
-      Console.WriteLine("=======================================");
+      // Console.WriteLine("In milliseconds: " + (end.Ticks - start.Ticks) / 10000.0);
+      // Console.WriteLine("In seconds: " + (end.Ticks - start.Ticks) / 10000000.0);
+      // Console.WriteLine("=======================================");
     }
   }
 }
