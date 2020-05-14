@@ -37,6 +37,20 @@ namespace part2
       // Console.WriteLine("=======================================");
       // Console.WriteLine("Rabbit total time: " + end2.Subtract(start2));
       // Console.WriteLine("=======================================");
+//       DateTime start = DateTime.Now;
+//       counter.Turtle(tenthousand);
+//       DateTime end = DateTime.Now;
+//       Console.WriteLine("=======================================");
+//       Console.WriteLine("Turtle total time: " + end.Subtract(start));
+//       Console.WriteLine("=======================================");
+
+//       DateTime start2 = DateTime.Now;
+//       counter.Rabbit(tenthousand);
+//       DateTime end2 = DateTime.Now;
+//       Console.WriteLine("=======================================");
+//       Console.WriteLine("Rabbit total time: " + end2.Subtract(start2));
+//       Console.WriteLine("=======================================");
+// >>>>>>> c4fdeb4becca8aa15237e9df04cb04ae15bf12a7
 
       // Console.WriteLine("In milliseconds: " + (end.Ticks - start.Ticks) / 10000.0);
       // Console.WriteLine("In seconds: " + (end.Ticks - start.Ticks) / 10000000.0);
