@@ -19,14 +19,14 @@ namespace part2
       string tenthousand = counter.CreateInput(10000);
 
       DateTime start = DateTime.Now;
-      counter.Turtle(ten);
+      counter.Turtle(tenthousand);
       DateTime end = DateTime.Now;
       Console.WriteLine("=======================================");
       Console.WriteLine("Turtle total time: " + end.Subtract(start));
       Console.WriteLine("=======================================");
 
       DateTime start2 = DateTime.Now;
-      counter.Rabbit(ten);
+      counter.Rabbit(tenthousand);
       DateTime end2 = DateTime.Now;
       Console.WriteLine("=======================================");
       Console.WriteLine("Rabbit total time: " + end2.Subtract(start2));
