@@ -10,10 +10,10 @@ namespace part2
     static void Main(string[] args)
     {
       // Splits
-      Split s = new Split();
-      Console.WriteLine(s.Calculate(new int[] { 1, 2, -1, 4, 0 })); // 1
-      Console.WriteLine(s.Calculate(new int[] { 1, 2, 3, 4, 5 })); // 0
-      Console.WriteLine(s.Calculate(new int[] { 0, 0, 0, 0, 0 })); // 4     
+      // Split s = new Split();
+      // Console.WriteLine(s.Calculate(new int[] { 1, 2, -1, 4, 0 })); // 1
+      // Console.WriteLine(s.Calculate(new int[] { 1, 2, 3, 4, 5 })); // 0
+      // Console.WriteLine(s.Calculate(new int[] { 0, 0, 0, 0, 0 })); // 4     
 
       // Revolutions
       // Revolutions r = new Revolutions();
@@ -22,11 +22,13 @@ namespace part2
       // Console.WriteLine(r.Calculate(new int[] { 5, 4, 3, 2, 1 })); // 5
 
       // Changes
-      // Changes m = new Changes();
-      // Console.WriteLine(m.Calculate(new int[] { 1, 1, 2, 2, 2 })); // 2
-      // Console.WriteLine(m.Calculate(new int[] { 1, 2, 3, 4, 5 })); // 0
-      // Console.WriteLine(m.Calculate(new int[] { 1, 1, 1, 1, 1 })); // 2
-      // Console.WriteLine(m.Calculate(new int[] { 1, 1, 2, 2, 3, 3, 3 })); // 2
+      Changes m = new Changes();
+      Console.WriteLine(m.Calculate(new int[] { 1, 1, 2, 2, 2 })); // 2
+      Console.WriteLine(m.Calculate(new int[] { 1, 2, 3, 4, 5 })); // 0
+      Console.WriteLine(m.Calculate(new int[] { 1, 1, 1, 1, 1 })); // 2
+      Console.WriteLine(m.Calculate(new int[] { 1, 1, 2, 2, 3, 3, 3 })); // 3
+      Console.WriteLine(m.Calculate(new int[] { 0, 0, 0, 0, 0, 0 }));
+      Console.WriteLine(m.Calculate(new int[] { 2, 2, 2, 2, 2, 2 }));
 
       // Repetition
       // LongestRepetition p = new LongestRepetition();

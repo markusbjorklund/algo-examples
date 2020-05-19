@@ -13,9 +13,14 @@ namespace part2
         // check if this number is the same as pervious
         if (t[i] == t[i - 1])
         {
-          if (i < t.Length)
+          if (i < t.Length - 1)
           {
-            t[i] = t[i - 1] + t[i + 1];
+            t[i] = t[i - 1] + t[i + 1] + 1;
+            numbers++;
+          }
+          else
+          {
+            t[i] = t[i - 1] + 1;
             numbers++;
           }
         }
