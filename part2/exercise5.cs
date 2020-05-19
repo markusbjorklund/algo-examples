@@ -1,3 +1,5 @@
+namespace part2
+{
   class Split
   {
     public int Calculate(int[] t)
