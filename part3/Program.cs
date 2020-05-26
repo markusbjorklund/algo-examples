@@ -37,13 +37,20 @@ namespace part3
       // Console.WriteLine(b.Find(new int[] { 0 }, 0)); // true
       // Console.WriteLine(b.Find(Randomizer(100000), 3)); // depends on Random
 
-      Inversions inv = new Inversions();
-      int[] t = inv.Create(5, 2);
-      foreach (int i in t)
-      {
-        Console.Write(i + " "); // 2 1 3 5 4
-      }
+      // Inversions inv = new Inversions();
+      // int[] t = inv.Create(5, 2);
+      // foreach (int i in t)
+      // {
+      //   Console.Write(i + " "); // 2 1 3 5 4
+      // }
 
+      Sorting s = new Sorting();
+      int[] sortMe = Randomizer(100);
+      int[] sortMeLarge = Randomizer(1000000);
+      s.QuickSort(sortMe);
+      s.MergeSort(sortMe);
+      s.QuickSort(sortMeLarge);
+      s.MergeSort(sortMeLarge);
     }
   }
 }
