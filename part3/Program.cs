@@ -30,12 +30,19 @@ namespace part3
       // Console.WriteLine(s.Calculate(new int[] { 1, 1, 1, 1, 1 })); // 0
       // Console.WriteLine(s.Calculate(Randomizer(10))); // depends on random
 
-      BinarySearch b = new BinarySearch();
-      Console.WriteLine(b.Find(new int[] { 4, 1, 8, 5 }, 2)); // false
-      Console.WriteLine(b.Find(new int[] { 0, 0 }, 0)); // true
-      Console.WriteLine(b.Find(new int[] { 4, 1, 8, 5, 8, 7, 4, 2, 3 }, 2)); // true
-      Console.WriteLine(b.Find(new int[] { 0 }, 0)); // true
-      Console.WriteLine(b.Find(Randomizer(100000), 3)); // depends on Random
+      // BinarySearch b = new BinarySearch();
+      // Console.WriteLine(b.Find(new int[] { 4, 1, 8, 5 }, 2)); // false
+      // Console.WriteLine(b.Find(new int[] { 0, 0 }, 0)); // true
+      // Console.WriteLine(b.Find(new int[] { 4, 1, 8, 5, 8, 7, 4, 2, 3 }, 2)); // true
+      // Console.WriteLine(b.Find(new int[] { 0 }, 0)); // true
+      // Console.WriteLine(b.Find(Randomizer(100000), 3)); // depends on Random
+
+      Inversions inv = new Inversions();
+      int[] t = inv.Create(5, 2);
+      foreach (int i in t)
+      {
+        Console.Write(i + " "); // 2 1 3 5 4
+      }
 
     }
   }
