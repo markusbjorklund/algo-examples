@@ -12,6 +12,7 @@ namespace examprep
 
     public int RoutePrice(string departure, string destination)
     {
+      return 0;
       // The method RoutePrice returns the best price from city departure to the city destination (or -1 if there is no such route).
     }
   }
