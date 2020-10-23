@@ -7,18 +7,15 @@ namespace examprep
   {
     public int Calculate(int[] input)
     {
-
       List<int> helperArray = new List<int>();
-
-      // this version needs some more work. fails on array4
-
       for (int i = 0; i < input.Length; i++)
       {
-        if (helperArray.Count != 0 && input[i] == input[i - 1])
+        int number = input[i];
+        if (helperArray.Count != 0 && helperArray[helperArray.Count -1] == number)
         {
           helperArray.RemoveAt(helperArray.Count -1);
         }
-        else helperArray.Add(i);
+        else helperArray.Add(number);
       }
       return helperArray.Count;
     }
